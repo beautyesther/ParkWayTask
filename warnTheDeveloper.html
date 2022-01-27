@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Warn The Developer</title>
+
+  <style>
+    .main {
+        width: 400px;
+        height: 400px;
+        margin: auto;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .inputs {
+        display: grid;
+        grid-template-columns: repeat(3, 33%);
+    }
+
+    label {
+        display: grid;
+        justify-items: center;
+        align-content: space-between;
+        text-align: center;
+        gap: 20px;
+    }
+
+    input {
+        width: 50px;
+        height: 30px;
+    }
+
+    button {
+        margin: 20px auto;
+        display: block;
+        border: none;
+        padding: 15px 30px;
+        background: #5a5aff;
+        color: white;
+        cursor: pointer!important;
+    }
+
+    button:hover {
+        background: #0000b1;
+    }
+
+    .answer {
+        text-align: center;
+        font-size: 1.2em;
+    }
+
+    h2 {
+        font-weight: 900;
+        font-size: 1.5em;
+    }
+  </style>
+    <script src="warnTheDeveloper.js"></script>
+</head>
+<body>
+<div class="main">
+    <h1 style="text-align: center">Warn the developer</h1>
+
+    <div class="inputs">
+        <label>
+            <span>Number of Developers</span>
+            <input id="dev" type="number">
+        </label>
+
+        <label>
+            <span>Number of Sweet</span>
+            <input id="sweet" type="number">
+        </label>
+
+        <label>
+            <span>Seat Number to begin</span>
+            <input id="seat" type="number">
+        </label>
+    </div>
+
+    <button onclick="warnTheDeveloper()">See Developer to be warned</button>
+
+    <div class="answer">
+        Warn Developer on Seat No. <h2 id="answer"></h2>
+    </div>
+</div>
+
+<script src="warnTheDeveloper.js"></script>
+</body>
+</html>

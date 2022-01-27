@@ -1,0 +1,83 @@
+:root {
+    --progresWidth: 45%;
+    --progresWidthText: '45%';
+    --progresWidth2: .9;
+    --progresWidthText2: '.9';
+
+}
+
+body {
+    display: block;
+}
+
+h3 {
+    text-align: center;
+}
+
+.progressBar1 {
+    width: 70%;
+    margin: auto;
+    border-radius: 20px;
+    height: 40px;
+    background: linear-gradient(#2f2f2f, #767676, #2f2f2f);
+    overflow: hidden;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.progressLevel {
+    background: linear-gradient(-55deg, #ffa300, #c17e00, #ffa300, #c17e00, #ffa300, #c17e00, #ffa300, #c17e00, #ffa300, #c17e00, #ffa300, #c17e00, #ffa300, #c17e00, #ffa300, #c17e00) left;
+    height: 100%;
+    border-radius: 20px;
+    width: var(--progresWidth);
+}
+
+.progressLevel:after {
+    content: var(--progresWidthText);
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 900;
+    display: grid;
+    align-items: center;
+    justify-items: end;
+    width: 100%;
+    height: 100%;
+}
+
+.progressBar2 {
+    transform: scale(.7, 1);
+    margin: auto;
+    border-radius: 20px;
+    height: 40px;
+    background: linear-gradient(#2f2f2f, #767676, #2f2f2f);
+    overflow: hidden;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.progressLevel2 {
+    background: linear-gradient(-55deg, #ffa300, #c17e00, #ffa300, #c17e00, #ffa300, #c17e00, #ffa300, #c17e00, #ffa300, #c17e00, #ffa300, #c17e00, #ffa300, #c17e00, #ffa300, #c17e00) left;
+    height: 100%;
+    border-radius: 20px;
+    transform: scaleX(var(--progresWidth2));
+    transform-origin: left;
+}
+
+.progressLevel2:after {
+    content: var(--progresWidthText2);
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 900;
+    display: grid;
+    align-items: center;
+    justify-items: end;
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    font-size: 1.3em;
+    margin: 50px;
+    display: block;
+    text-align: center;
+}
